@@ -346,7 +346,7 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
-"@grpc/grpc-js@^1.6.7":
+"@grpc/grpc-js@*", "@grpc/grpc-js@^1.6.7":
   "integrity" "sha512-eBM03pu9hd3VqDQG+kHahiG1x80RGkkqqRb1Pchcwqej/KkAH95gAvKs6laqaHCycYaPK+TKuNQnOz9UXYA8qw=="
   "resolved" "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-1.6.7.tgz"
   "version" "1.6.7"
@@ -648,7 +648,7 @@
     "webpack" "5.72.1"
     "webpack-node-externals" "3.0.0"
 
-"@nestjs/common@^8.0.0":
+"@nestjs/common@^7.0.8 || ^8.0.0", "@nestjs/common@^8.0.0":
   "integrity" "sha512-INp1ERDrLiQ4GwRc3zotTwBLZm2sIwcJwnBE2yXqsth17KijmoVmY8UB5Tares0IlwjsqlRFWkCX8uWE5rzbSA=="
   "resolved" "https://registry.npmjs.org/@nestjs/common/-/common-8.4.6.tgz"
   "version" "8.4.6"
@@ -670,6 +670,19 @@
     "path-to-regexp" "3.2.0"
     "tslib" "2.4.0"
     "uuid" "8.3.2"
+
+"@nestjs/mapped-types@*":
+  "integrity" "sha512-NFvofzSinp00j5rzUd4tf+xi9od6383iY0JP7o0Bnu1fuItAUkWBgc4EKuIQ3D+c2QI3i9pG1kDWAeY27EMGtg=="
+  "resolved" "https://registry.npmjs.org/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz"
+  "version" "1.0.1"
+
+"@nestjs/microservices@^8.0.0", "@nestjs/microservices@^8.4.6":
+  "integrity" "sha512-HEGznxFKnNwjIk+GT/xKzZ4jo4Itus0PhSMm689SDCBOzvdAOuqCkCWZXsP+jTRzeqaI+/7GEFq+P8q1eZsc/A=="
+  "resolved" "https://registry.npmjs.org/@nestjs/microservices/-/microservices-8.4.6.tgz"
+  "version" "8.4.6"
+  dependencies:
+    "iterare" "1.2.1"
+    "tslib" "2.4.0"
 
 "@nestjs/platform-express@^8.0.0":
   "integrity" "sha512-OserZ+RwjMyECFAL0/12Bztf63EnFhlFUEJ4/a502RQ0eZogt4M3ROauaW4bpt2Q3YH4hy0eT+4eqkVOMzjtPQ=="
