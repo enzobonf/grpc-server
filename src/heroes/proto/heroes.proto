@@ -1,12 +1,12 @@
 // hero/hero.proto
 syntax = "proto3";
+package stac.heroes;
 
 import "google/protobuf/empty.proto";
 
-package stac.heroes;
-
 service HeroesService {
-  rpc FindOne (HeroById) returns (Hero) {}
+  rpc FindOne (HeroById) returns (Hero);
+  rpc FindAll (ListHeroesRequest) returns (ListHeroesResponse);
 }
 
 message HeroById {
@@ -16,4 +16,12 @@ message HeroById {
 message Hero {
   int32 id = 1;
   string name = 2;
+}
+
+message ListHeroesRequest {
+
+}
+
+message ListHeroesResponse {
+  repeated Hero heroes = 1;
 }

@@ -13,4 +13,10 @@ export class HeroesController {
     console.log('passou', id_hero);
     return this.heroesService.findOne(+id_hero);
   }
+
+  @GrpcMethod('HeroesService', 'FindAll')
+  findAll() {
+    console.log('passou all');
+    return this.heroesService.findAll();
+  }
 }
